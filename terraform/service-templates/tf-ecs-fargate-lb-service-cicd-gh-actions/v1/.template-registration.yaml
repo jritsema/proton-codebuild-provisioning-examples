@@ -1,2 +1,2 @@
 compatible_environment:
-  - tf-vpc-ecs-cluster:1.0
+  - tf-vpc-ecs-cluster:1
