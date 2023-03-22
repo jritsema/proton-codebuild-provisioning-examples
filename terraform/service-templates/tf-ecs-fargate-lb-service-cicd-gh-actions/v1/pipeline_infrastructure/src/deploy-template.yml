@@ -26,6 +26,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
+    # let's now add a new step that we want
+    # all developers to start doing in their
+    # ci/cd pipelines
+    - name: Run code security scan
+      run: echo "running a security scan on our code before deploying"
+
     - name: Assume AWS IAM Role
       uses: aws-actions/configure-aws-credentials@v1-node16
       with:
