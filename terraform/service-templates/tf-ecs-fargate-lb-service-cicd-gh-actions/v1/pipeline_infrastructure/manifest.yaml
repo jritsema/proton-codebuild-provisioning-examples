@@ -48,7 +48,7 @@ infrastructure:
 
           # install terraform cli
           - echo "Installing Terraform CLI ${TF_VERSION}"
-          - ./install-terraform.sh ${TF_VERSION}
+          - ./scripts/install-terraform.sh ${TF_VERSION}
 
           # get user-named proton input
           - export IN=$(cat proton-inputs.json)
