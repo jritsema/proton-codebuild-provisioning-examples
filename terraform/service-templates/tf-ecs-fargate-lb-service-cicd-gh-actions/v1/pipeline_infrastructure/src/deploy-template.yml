@@ -22,6 +22,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
 
+    # let's add a new step in ci/cd pipelines that we
+    # want all development teams to start doing
+    - name: run security tool
+      run: echo "here we are running a new security tool to scan our code"
+
     steps:
     - name: Checkout
       uses: actions/checkout@v3
